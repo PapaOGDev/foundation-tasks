@@ -1,21 +1,21 @@
 import java.util.Scanner;
 public class Area{
     public static void main(String[] args){
-        Scanner input = new Scanner(Syatem.in);
-        System.out.print("Ehter the co-ordinate of the three point on the triangle: ");
-        double x1 = input.nextRouble();
-        double x2 = input.nextRouble();
-        double x3 = input.nextRouble();
-        double x4 = input.nextRouble();
-        double x5 = input.nextRouble();
-        double x6 = input.nextRouble();
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter the co-ordinate of the three point on the triangle: ");
+        double x1 = input.nextDouble();
+        double y1 = input.nextDouble();
+        double x2 = input.nextDouble();
+        double y2 = input.nextDouble();
+        double x3 = input.nextDouble();
+        double y3 = input.nextDouble();
 
-        double sideOne = Math.sqrt(Math.pow(x2-x1,2) + Math.sqrt(Math.pow(y2-y1,2);
-        double sideTwo = Math.sqrt(Math.pow(x3-x2,2) + Math.sqrt(Math.pow(y3-y2,2);
-        double sideThree = Math.sqrt(Math.pow(x3-x1,2) + Math.sqrt(Math.pow(y3-y1,2); 
+        double sideOne = Math.sqrt(Math.pow(x2-x1,2) + Math.pow(y2-y1,2));
+        double sideTwo = Math.sqrt(Math.pow(x3-x2,2) + Math.pow(y3-y2,2));
+        double sideThree = Math.sqrt(Math.pow(x3-x1,2) + Math.pow(y3-y1,2)); 
 
         double s = (sideOne + sideTwo + sideThree)/2;
-        double area = Math.sqrt(s * (s -sideOne) * (s-sideThree));
+        double area = Math.sqrt(s * (s -sideOne) * (s-sideTwo) * (s-sideThree));
         System.out.printf("The area of the triangle is %.1f%n", area);
     }
 }
